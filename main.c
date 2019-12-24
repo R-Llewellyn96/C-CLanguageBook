@@ -1,17 +1,17 @@
 #include <stdio.h>
 
+//includes all other functions, to be called in main
 #include "tempConv.c"
 
+//main function, in this instance used as a master to call other functions
 int main() {
 
-    /*
-     * runs temperature converter program, enter temperature and C or F
-     * to convert your temperature to the opposite system
-     */
-    int convTemp = tempConv();
+    //runs temperature converter program, fahrenheit to celsius table to 300
+    tempConv();
 
-    printf("\nConverted Temperature: %d\n", convTemp);
-    
+    //Tell user program has finished run
     printf("\nFinished!\n");
+
+    //return value to int function main
     return 0;
 }
